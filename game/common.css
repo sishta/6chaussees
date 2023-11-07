@@ -8,8 +8,8 @@ body          { font-family: Roboto, sans-serif; }
 #controls     { width: 28em; float: right; padding: 1em; font-size: 0.7em; }
 #controls th  { text-align: right; vertical-align: middle; }
 #instructions { clear: right; float: right; width: 17em; padding: 1em; border: 1px solid black; box-shadow: 5 5 5px black; }
-#racer        { position: relative; z-index: 0; width: 800px; height: 600px; margin-left: 0em; border: 2px solid black; }
-#canvas       { position: absolute; z-index: 0; width: 800px; height: 600px; z-index: 0; background-color: #72D7EE; }
+#racer        { position: relative; z-index: 0; width: 1280px; height: 576px; margin-left: 0em; border: 2px solid black; }
+#canvas       { position: absolute; z-index: 0; width: 1280px; height: 576px; z-index: 0; background-color: #72D7EE; }
 #mute         { background-position:   0px 0px; width: 32px; height: 32px; background: url(images/mute.png); display: inline-block; cursor: pointer; position: absolute; margin-left: 20em; }
 #mute.on      { background-position: -32px 0px; }
 

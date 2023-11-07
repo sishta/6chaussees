@@ -92,8 +92,8 @@
 
     var fps            = 60;                      // how many 'update' frames per second
     var step           = 1/fps;                   // how long is each frame (in seconds)
-    var width          = 1024;                    // logical canvas width
-    var height         = 768;                     // logical canvas height
+    var width          = 1280;                    // logical canvas width
+    var height         = 576;                     // logical canvas height
     var centrifugal    = 0.3;                     // centrifugal force multiplier when going around curves
     var offRoadDecel   = 0.99;                    // speed multiplier when off road (e.g. you lose 2% speed each update frame)
     var skySpeed       = 0.001;                   // background sky layer scroll speed when going around curve (or up hill)
@@ -607,7 +607,7 @@
 
     Game.run({
       canvas: canvas, render: render, update: update, stats: stats, step: step,
-      images: ["background", "sprites"],
+      images: ["background", "sprites", "sprotes_2"],
       keys: [
         { keys: [KEY.LEFT,  KEY.A], mode: 'down', action: function() { keyLeft   = true;  } },
         { keys: [KEY.RIGHT, KEY.D], mode: 'down', action: function() { keyRight  = true;  } },
@@ -620,7 +620,7 @@
       ],
       ready: function(images) {
         background = images[0];
-        sprites    = images[1];
+        sprites    = images[2];
         reset();
         Dom.storage.fast_lap_time = Dom.storage.fast_lap_time || 180;
         updateHud('fast_lap_time', formatTime(Util.toFloat(Dom.storage.fast_lap_time)));
