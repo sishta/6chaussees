@@ -16,5 +16,9 @@ images: ["background", "sprites", "sprotes_2"],
 ## Масщтаб всех спрайтов
 
 **common.js**
-SPRITES.SCALE = 0.3 * (1/SPRITES.PLAYER_STRAIGHT.w) // the reference sprite width should be 1/3rd the (half-)roadWidth - а так изначально
-//SPRITES.SCALE = 0.3 * (1/80) - так я выравнял, но проблема с коллизиями
+строка 411:
+//SPRITES.SCALE = 0.3 * (1/SPRITES.PLAYER_STRAIGHT.w) // the reference sprite width should be 1/3rd the (half-)roadWidth - а так изначально
+SPRITES.SCALE = 0.3 * (1/80) - так я выравнял, но проблема с коллизиями
+
+строка 322: Я уменьшил рендер спрайта. Поэтому проблема с коллизией
+Render.sprite(ctx, width*0.25, height*0.25, resolution, roadWidth, sprites, sprite, scale, destX, destY + bounce, -0.5, -1);
